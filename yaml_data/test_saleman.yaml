@@ -1,0 +1,46 @@
+#业务员编号查询业务员信息
+test_get_saleman_info:
+  - sale_num: '3'
+
+
+#添加业务员
+test_saleman_insert_sale:
+  - pwd: '123456'
+    phone: '15642578454'
+    remark: ''
+    contact_phone: '13156489586'
+    name : '小凳子'
+
+
+#修改业务员
+test_saleman_update_sale:
+  - pwd: '******'
+    remark: ''
+    contact_phone: '13156489586'
+    name: 'wewe'
+    saleman_num: '3'
+
+#业务员APP相关接口:
+
+#业务员数据列表
+test_saleman_records:
+  - month: '2019-12'
+    day: '2019-12-31'
+    start: '2019-12-30 00:00:00'
+    stop: '2019-12-31 23:59:59'
+    page: '1'
+    page_size: '10'
+
+#修改密码
+test_saleman_update_password:
+  - password: '123456'
+    verification_code: '4587954'
+
+#消息通知列表
+test_saleman_notice_list:
+  - page: '1'
+    page_size: '10'
+
+#修改头像
+test_saleman_update_head_portrait:
+  - url: 'https://mat.uphicoo.com/agent/20190906/1915b1f5-297f-3b81-9321-64fa33ecaf59.png'

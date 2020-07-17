@@ -1,0 +1,47 @@
+
+#添加代理商
+test_creat_agent_1:
+  - ver_code: '156100'
+    user_name: '16895654854'
+    telphone: '16895654854'
+    agent_name: '爱华一级代理商'
+    respo_name: '爱华'
+    is_sub: '1'
+    start_time: '2020-04-24'
+    expire_time: '2023-12-31'
+    agent_region:
+      - "110000-110000-110000"
+      - "110000"
+    is_market: '0'
+
+
+    #编辑代理商信息
+test_edit_agent_1:
+  - telphone: '15875956847'
+    respo_name: '15875956847'
+    is_sub: '1'
+    start_time: '2020-04-24'
+    expire_time: '2023-12-31'
+    agent_region:
+      - "110000-110000-110000"
+      - "110000"
+    is_market: '0'
+    agent_num: '701001017'
+
+    #直属代理商列表
+test_my_agent_list_1:
+  - code: '000000'
+    page_size: 20
+    page: 1
+
+   #修改代理商账号信息
+test_update_agent_bank_info:
+  - bank_accout_name: '曹羽'
+    bank_account_no: '2118001000693'
+    deposit_bank_code: 'BOB'
+    sub_bank_code: '313100001188'
+    photo:
+       posphoto: "https://mat.uphicoo.com/agent/20200410/e8562adc-6fac-3d00-b464-ee9930795dec.jpg"
+       sidephoto: "https://mat.uphicoo.com/agent/20200410/82d35524-3d9a-324d-b184-13064da477a3.jpg"
+       handheld: "https://mat.uphicoo.com/agent/20200410/f6e1f1c4-94d3-3090-9f7d-052a1c788920.jpg"
+       bankphoto: "https://mat.uphicoo.com/agent/20200410/23eec117-434a-3856-97a9-225742690268.jpg"

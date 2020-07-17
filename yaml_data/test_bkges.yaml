@@ -1,0 +1,41 @@
+
+#佣金统计界面
+test_bkge_indexs:
+ - start_time: '2020-1-1'
+   stop_time: '2020-2-29'
+   page: '1'
+   page_size: '10'
+   day: '0'
+
+ - start_time: '2020-2-1'
+   stop_time: '2020-3-31'
+   page: '1'
+   page_size: '10'
+   day: '1'
+
+ - start_time: '2020-3-1'
+   stop_time: '2020-4-30'
+   page: '1'
+   page_size: '10'
+   day: '1'
+
+#通道佣金列表
+test_channel_bkge_list:
+ - start_time: '2020-1-1'
+   stop_time: '2020-2-29'
+   page: '1'
+   page_size: '10'
+   day: '0'
+
+ - start_time: '2020-2-1'
+   stop_time: '2020-3-31'
+   page: '1'
+   page_size: '10'
+   day: '1'
+
+ - start_time: '2020-3-1'
+   stop_time: '2020-4-30'
+   page: '1'
+   page_size: '10'
+   day: '1'
+

@@ -1,0 +1,5 @@
+#认证状态
+test_wx_auth_get_apply_data:
+  - merchant_num: '8020000008'
+    channel_id: '100033'
+

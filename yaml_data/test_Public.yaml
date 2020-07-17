@@ -1,0 +1,19 @@
+
+#上传图片
+test_public_upload:
+  - code: '000000'
+    image_file: '../yaml_data/page1.jpg'
+
+
+
+#获取地区
+
+test_region_regions:
+  - version: '1.0.0'
+
+
+#发送验证码(修改密码)
+test_retrieve_send_code:
+  - mobile: '13412342001'
+    login_type: 'agent'
+

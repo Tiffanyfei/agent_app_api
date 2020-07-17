@@ -1,0 +1,10 @@
+#代理商通知状态更改
+test_update_agent_notice:
+  - notice_id: '444469856360865793'
+
+#发布通知
+test_create_notice:
+  - title: '商户服务升级完成'
+    content: '商户服务已于9日升级完成'
+    posted: '1'
+    author: 'aa'

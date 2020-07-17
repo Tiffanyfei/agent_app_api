@@ -1,0 +1,30 @@
+#01贴牌商编辑商户基础资料
+test_edit_base_info:
+  contact_phone: '18812348888'
+  contact_email: '888@qq.com'
+  merchant_num: '8020000071'
+  sale_num: ''
+  contact_name: '陈陈'
+  contact_id_no: '522731199101110000'
+
+#01贴牌商编辑商户基本资料
+test_edit_merchant_info:
+  - real_address: '手动阀手动阀手动阀打发'
+    area:
+      - "110000"
+      - "110100"
+      - "110101"
+    type: '200'
+    merchant_num: '8020000071'
+    service_phone: '13637877554'
+    bus_licence_no: '365298526522'
+    bus_licence_reg_date: '2015-05-28'
+    bus_licence_expire: '2026-12-31'
+    short_name: '我是商户简称'
+    full_name: '我是商户全称'
+    bus_licence_oth:
+      - "https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png"
+    bus_licence: 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+    store_counter: 'https://mat.uphicoo.com/agent/20200327/f61187c4-44b2-3669-9af2-ec4483305d3c.jpg'
+    store_face: 'https://mat.uphicoo.com/agent/20200327/19596da9-9fc8-3ad8-b4a9-c8a0e7318f4c.jpg'
+    store_space: 'https://mat.uphicoo.com/agent/20200327/4221d487-7f25-3d22-9e8d-c82149fe6ded.jpg'

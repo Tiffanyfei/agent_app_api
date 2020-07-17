@@ -1,0 +1,54 @@
+#商户进件字段定义
+
+test_channel_mcht_fields_info:
+  - code: '000000'
+
+#area地区获取
+test_get_channel_area:
+  - channel_id: '100012'
+    area_name: ''
+
+#获取通道MCC码
+test_get_channel_mcc:
+  - channel_id: '100012'
+
+#合礼宝签章合同
+test_get_channel_contract:
+  - merchant_id: '8020000008'
+    channel_id: '100033'
+
+#获取商户已开通通道信息/支付方式列表
+test_get_merchant_open_channel:
+  - merchant_num: '8020000036'
+
+
+#通道审核列表进度
+test_channel_audit_list:
+#入驻中
+  - status: '100'
+
+#成功
+  - status: '200'
+
+#失败
+  - status: '300'
+
+#获取通道启用配置信息
+
+test_get_channel_rates:
+  - merchant_num: '8020000036'
+    type: 'weixin'
+
+#通道启用配置信息修改
+#开启通道配置
+test_update_payment_modes_and_rates:
+  - pay_type: 'weixin'
+    is_checkout: true
+    merchant_id: '8020000008'
+    channel_id: '100033'
+
+#关闭通道配置
+  - pay_type: 'weixin'
+    is_checkout: false
+    merchant_id: '8020000008'
+    channel_id: '100033'

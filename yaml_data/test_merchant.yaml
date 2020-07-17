@@ -1,0 +1,435 @@
+test_get_merchant_list_1:
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 0
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 0
+    isv: 1
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 1
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 2
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 3
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 1
+    isv: 1
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 2
+    isv: 1
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 3
+    isv: 1
+
+test_get_merchant_list_2:
+  - code: '000000'
+    page_size: 20
+    page: 1
+    full_name: '陈亦飞'
+
+test_get_merchant_list_3:
+  - page: 8
+    code: '000000'
+    page_size: 20
+
+test_get_sub_merchant_list_1:
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 0
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 1
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 2
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 3
+    isv: 0
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 0
+    isv: 1
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 1
+    isv: 1
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 2
+    isv: 1
+  - code: '000000'
+    page_size: 20
+    page: 1
+    level: 3
+    isv: 1
+
+test_get_sub_merchant_list_2:
+  - code: '000000'
+    page_size: 20
+    page: 1
+    full_name: '陈'
+
+test_get_loss_merchant_list_1:
+  - code: '000000'
+    user:
+      level: 0
+      isv: 0
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 1
+      isv: 0
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 2
+      isv: 0
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 3
+      isv: 0
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 0
+      isv: 1
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 1
+      isv: 1
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 2
+      isv: 1
+    data:
+      page_size: 20
+      page: 1
+  - code: '000000'
+    user:
+      level: 3
+      isv: 1
+    data:
+      page_size: 20
+      page: 1
+
+test_get_loss_merchant_list_2:
+  - code: '000000'
+    data:
+      page_size: 20
+      page: 1
+      full_name: '陈'
+
+test_get_idcard_type_1:
+  - code: '000000'
+    assert_data:
+      - code: 1
+        name: '身份证'
+      - code: 2
+        name: '港澳台通行证'
+      - code: 3
+        name: '台湾身份证'
+      - code: 4
+        name: '香港身份证'
+      - code: 5
+        name: '澳门身份证'
+      - code: 9
+        name: '其它'
+
+test_get_merchant_info_1:
+  - code: '000000'
+    user:
+      level: 0
+      isv: 0
+  - code: '000000'
+    user:
+      level: 1
+      isv: 0
+  - code: '000000'
+    user:
+      level: 2
+      isv: 0
+  - code: '000000'
+    user:
+      level: 3
+      isv: 0
+  - code: '000000'
+    user:
+      level: 0
+      isv: 1
+  - code: '000000'
+    user:
+      level: 1
+      isv: 1
+  - code: '000000'
+    user:
+      level: 2
+      isv: 1
+  - code: '000000'
+    user:
+      level: 3
+      isv: 1
+
+#创建商户信息
+test_get_create_merchant_1:
+  - code: '000000'
+    data:
+      contact_phone: '15910000001'
+      contact_email: '13637877554@163.com'
+      user_num: ''
+      sale_num: ''
+      contact_name: '测试'
+      contact_id_no: '500381199304252922'
+
+test_create_merchant_2:
+  - mobile: '15510001362'
+    base_info:
+      contact_phone: '13312341234'
+      contact_email: '13637877554@163.com'
+      user_num: ''
+      sale_num: ''
+      contact_name: '测试'
+      contact_id_no: '500381199304252922'
+    merchant_info:
+      real_address: '手动阀手动阀手动阀打发'
+      area:
+          - "110000"
+          - "110100"
+          - "110101"
+      type: '200'
+      service_phone: '13637877554'
+      bus_licence_no: '365298526522'
+      bus_licence_reg_date: '2015-05-28'
+      bus_licence_expire: '2026-12-31'
+      short_name: '我是商户简称'
+      full_name: '我是商户全称'
+      bus_licence_oth:
+        - "https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png"
+      bus_licence: 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+      store_counter: 'https://mat.uphicoo.com/agent/20200327/f61187c4-44b2-3669-9af2-ec4483305d3c.jpg'
+      store_face: 'https://mat.uphicoo.com/agent/20200327/19596da9-9fc8-3ad8-b4a9-c8a0e7318f4c.jpg'
+      store_space: 'https://mat.uphicoo.com/agent/20200327/4221d487-7f25-3d22-9e8d-c82149fe6ded.jpg'
+    leader_info:
+      leader_name: '陈亦飞'
+      leader_id_type: '1'
+      leader_id_no: '522731199101110088'
+      leader_phone: '13312341234'
+      leader_id_effective_date: '2020-04-21'
+      leader_id_expire: '2029-04-21'
+      leader_id_1: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+      leader_id_2: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+      leader_id_3: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+    bank_info:
+      bank_account_name: '李文忠'
+      bank_area:
+        - "520000"
+        - "522700"
+        - "522701"
+      bank_account_type: '200'
+      bank_account_no: '888888999999'
+      bank_pre_mobile: '13312340001'
+      bank_id_card_effective: ''
+      bank_id_card_expire: ''
+      bank_name: '交通银行'
+      bank_name_code: 'BCM'
+      bank_branch_name: '交通银行股份有限公司黔南分行'
+      bank_branch_code: '301715000019'
+      bank_id_card_type: '1'
+      bank_id_card_no: ''
+      bank_permit: ''
+      bank_card: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+      bank_card_inhand: ''
+      bank_idcard_1: ''
+      bank_idcard_2: ''
+      leader_id_3: ''
+
+
+
+#01贴牌商编辑商户基础资料
+test_edit_base_info:
+  - code: '000000'
+    data:
+      contact_phone: '18812348888'
+      contact_email: '888@qq.com'
+      sale_num: ''
+      contact_name: '陈陈'
+      contact_id_no: '500381199304252922'
+
+#01贴牌商编辑商户基本资料
+test_edit_merchant_info:
+  - code: '000000'
+    data:
+      real_address: '手动阀手动阀手动阀打发'
+      area:
+        - "110000"
+        - "110100"
+        - "110101"
+      type: '200'
+      service_phone: '13637877554'
+      bus_licence_no: '365298526522'
+      bus_licence_reg_date: '2015-05-28'
+      bus_licence_expire: '2026-12-31'
+      short_name: '我是商户简称'
+      full_name: '我是商户全称'
+      bus_licence_oth:
+        - 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+        - 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+      bus_licence: 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+      store_counter: 'https://mat.uphicoo.com/agent/20200327/f61187c4-44b2-3669-9af2-ec4483305d3c.jpg'
+      store_face: 'https://mat.uphicoo.com/agent/20200327/19596da9-9fc8-3ad8-b4a9-c8a0e7318f4c.jpg'
+      store_space: 'https://mat.uphicoo.com/agent/20200327/4221d487-7f25-3d22-9e8d-c82149fe6ded.jpg'
+    assert_data:
+      real_address: '手动阀手动阀手动阀打发'
+      area:
+        - "110000"
+        - "110100"
+        - "110101"
+      type: 200
+      service_phone: '13637877554'
+      bus_licence_no: '365298526522'
+      bus_licence_reg_date: '2015-05-28'
+      bus_licence_expire: '2026-12-31'
+      short_name: '我是商户简称'
+      full_name: '我是商户全称'
+      bus_licence_oth:
+        - 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+        - 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+      bus_licence: 'https://mat.uphicoo.com/agent/20200410/3a53fe92-9844-39a1-8c25-e6fa0cda2f9d.png'
+      store_counter: 'https://mat.uphicoo.com/agent/20200327/f61187c4-44b2-3669-9af2-ec4483305d3c.jpg'
+      store_face: 'https://mat.uphicoo.com/agent/20200327/19596da9-9fc8-3ad8-b4a9-c8a0e7318f4c.jpg'
+      store_space: 'https://mat.uphicoo.com/agent/20200327/4221d487-7f25-3d22-9e8d-c82149fe6ded.jpg'
+
+#01级贴牌商编辑商户的法人信息
+test_edit_leader_info:
+  - code: '000000'
+    data:
+      leader_name: '陈亦飞'
+      leader_id_type: '1'
+      leader_id_no: '522731199101110088'
+      leader_phone: '13312341234'
+      leader_id_effective_date: '2020-04-21'
+      leader_id_expire: '2029-04-21'
+      leader_id_1: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+      leader_id_2: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+      leader_id_3: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+    assert_data:
+      leader_name: '陈亦飞'
+      leader_id_type: 1
+      leader_id_no: '522731199101110088'
+      leader_phone: '13312341234'
+      leader_id_effective_date: '2020-04-21'
+      leader_id_expire: '2029-04-21'
+      leader_id_1: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+      leader_id_2: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+      leader_id_3: 'https://mat.uphicoo.com/agent/20200327/902be92a-0e43-33a3-80d6-2550abf3f3e0.jpg'
+
+
+#01贴牌商编辑账户信息
+test_edit_bank_info:
+    - code: '000000'
+      data:
+        bank_account_name: '李文忠'
+        bank_area:
+          - "520000"
+          - "522700"
+          - "522701"
+        bank_account_type: '300'
+        bank_account_no: '888888999999'
+        bank_pre_mobile: '13312340001'
+        bank_id_card_effective: '2019-12-12'
+        bank_id_card_expire: '2019-12-12'
+        bank_name: '交通银行'
+        bank_name_code: 'BCM'
+        bank_branch_name: '交通银行股份有限公司黔南分行'
+        bank_branch_code: '301715000019'
+        bank_id_card_type: '1'
+        bank_id_card_no: '888888'
+        bank_permit: ''
+        bank_card: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+        bank_card_inhand: ''
+        bank_idcard_1: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+        bank_idcard_2: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+        leader_id_3: ''
+      assert_data:
+        bank_account_name: '李文忠'
+        bank_area:
+          - "520000"
+          - "522700"
+          - "522701"
+        bank_account_type: 300
+        bank_account_no: '888888999999'
+        bank_pre_mobile: '13312340001'
+        bank_id_card_effective: '2019-12-12'
+        bank_id_card_expire: '2019-12-12'
+        bank_name: '交通银行'
+        bank_name_code: 'BCM'
+        bank_branch_name: '交通银行股份有限公司黔南分行'
+        bank_branch_code: '301715000019'
+        bank_id_card_type: 1
+        bank_id_card_no: '888888'
+        bank_card: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+        bank_idcard_1: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+        bank_idcard_2: 'https://mat.uphicoo.com/agent/20200417/ffe6f3a8-242a-378c-85f0-64a72f64e0b4.jpg'
+
+test_is_enable_register:
+  - type: 'new'
+    assert_result:
+      code: '000000'
+    assert_data:
+      - 'user_num'
+  - type: 'useder'
+    assert_result:
+      code: '300001'
+      message: '用户已注册'
+  - type: 'old'
+    assert_result:
+      code: '000000'
+    assert_data:
+      - 'user_num'
+
+
+
