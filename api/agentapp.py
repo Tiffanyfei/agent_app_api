@@ -24,8 +24,8 @@ class AgentApp(BaseApi):
     test_sale_our = {'tenant-id': '61000001', 'username': '13312349006', 'password': '123456'}
     test_sale_isv = {'tenant-id': '61000034', 'username': '002003', 'password': '123456'}
 
-    db = {'host': "192.168.19.68", 'port': 50000, 'user': "remote", 'password': "is2ce8yfsq5r3Zloz0cN7wZ"}
-    db_mongo = {'host': "192.168.19.68", 'port': 50002, 'user': "uphicoo", 'password': 'uphicoo', 'dbname': 'channel'}
+    db = {'host': "****", 'port': 50000, 'user': "user", 'password': "pw"}
+    db_mongo = {'host': "****", 'port': 50002, 'user': "user", 'password': 'pw', 'dbname': 'channel'}
 
     # final预发布环境
     # ucenter = '*******'
